@@ -32,8 +32,16 @@ Use `create_measurements.py` to generate test files of any size:
 ```bash
 python create_measurements.py <num_rows>
 ```
+If you want to copy my personal approach, you can run these commands:
+```bash
+python create_measurements.py 1_000
+python create_measurements.py 100_000
+python create_measurements.py 1_000_000
+python create_measurements.py 100_000_000
+python create_measurements.py 1_000_000_000
+```
 
-Pre-generated files used for benchmarking:
+Generated files used for benchmarking:
 
 | File | Rows |
 |------|------|
