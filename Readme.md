@@ -27,6 +27,8 @@ for all ~400 unique weather stations across the full 1-billion-row dataset.
 
 ## Data Generation
 
+While the original 1BRC file was provided i made my own edits to it, making it multithreaded so that i could generate the files faster for testing, also to generate files of smaller sized for testing the performance of the different approaches on different sizes of data.
+
 Use `create_measurements.py` to generate test files of any size:
 
 ```bash
@@ -40,6 +42,7 @@ python create_measurements.py 1_000_000
 python create_measurements.py 100_000_000
 python create_measurements.py 1_000_000_000
 ```
+Note that these generate files with the same name and will overwrite each other. I renamed them after running each command so be mindful of that when just copy pasting commands from here. You can also modify the `create_measurements.py` script to generate files with different names if you want to avoid this issue.
 
 Generated files used for benchmarking:
 
